@@ -11641,7 +11641,7 @@ body {
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("bg-signup.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11731,7 +11731,25 @@ body {
   .parallax1{
     height:500px;
     width: 100%;
-    background-image:url('2.png');
+    background-image:url('2.jpg');
     background-size:cover;
     background-attachment: fixed;
     }
+    .pub__shoppable-image__dot {
+      transition: border-color 250ms ease-in-out,opacity 250ms ease-in-out,visibility 250ms ease-in-out;
+      transform: translateX(-1rem) translateY(-1rem) scale(0.999);
+      padding: 0;
+      width: 2rem;
+      height: 2rem;
+      border: 2px solid transparent;
+      position: absolute;
+      background: rgba(0,0,0,.2);
+      opacity: 0;
+      visibility: hidden;
+      border-radius: 64px;
+      line-height: .5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
