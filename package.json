@@ -1,22 +1,18 @@
 {
   "name": "webmarta",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "webmarta",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node App.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rogergomezz/WebMarta.git"
-  },
-  "author": "rogercin",
+  "author": "Roger Gomez",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rogergomezz/WebMarta/issues"
-  },
-  "homepage": "https://github.com/rogergomezz/WebMarta#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.1",
+    "javascript": "^1.0.0",
+    "materialize-css": "^1.0.0-rc.2",
+    "scrolltrigger": "^1.0.1",
+    "scss": "^0.2.4"
   }
 }

@@ -1,92 +1,151 @@
-nav ul a,
-nav .brand-logo {
-  color: #444;
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Hind:wght@300;400;500;600;700&display=swap");
+
+.dropdown-toggle::after {
+  display: none;
+}
+.text-decoration-none {
+  text-decoration: none !important;
+}
+/* Font Awesome Icons have variable width. Added fixed width to fix that.*/
+.icon-width {
+  width: 2rem;
 }
 
-p {
-  line-height: 2rem;
+:root {
+  /* TEXT COLORS */
+  --color-primary: white;
+  --color-secondary: rgb(54, 54, 54);
+
+  /* BACKGROUND COLORS */
+  --background-primary: linear-gradient(315deg, #0d0249 0%, #0a001d 74%);
+  --background-secondary: rgb(51, 141, 77);
+  --footer-color: rgb(0, 0, 0);
+  --background-4t: rgb(255, 255, 255);
+
+  --font-xxl: 60px;
+  --font-xl: 45px;
+  --font-l: 30px;
+  --font-m: 16px;
+  --font-s: 12px;
 }
 
-.button-collapse {
-  color: #ee6e73;
+body {
+  font-family: Poppins;
+  line-height: 1.1;
 }
 
-.parallax-container {
-  min-height: 380px;
+.container-content {
+  min-height: 90vh;
+  background-image: var(--background-primary);
+}
+
+.heading-img-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-content {
+  min-height: 500px;
+  align-content: center;
+
+  /* Create the parallax scrolling effect */
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/images/landscape.jpg);
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.text-heading {
+  color: var(--color-primary);
+  font-size: var(--font-xxl);
+}
+.img-content p {
+  color: var(--color-primary);
+  font-size: var(--font-l);
+}
+
+.section-cards-content {
+  margin-top: 4rem;
+}
+
+.cards-content {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  height: 400px;
+  max-width: 350px;
+  width: 100%;
+}
+
+.section-about-content {
+  background-color: var(--background-4t);
+  width: 100%;
+}
+.about-content {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  padding: 5rem;
+}
+
+.title-about,
+.text-about {
+  color: var(--color-secondary);
+}
+
+.section-parallax-content {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  min-height: 350px;
+
+  /* Create the parallax scrolling effect */
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/images/leon.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parallax-content {
+  display: flex;
+  width: 100%;
+}
+
+.white-parallax {
+  width: 50%;
+}
+.text-parallax {
+  width: 50%;
+}
+
+.footer-content {
+  width: 100%;
+  height: 50px;
+  background-color: var(--footer-color);
+  position: relative;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.footer-copyright h1 {
+  color: var(--color-primary);
+  font-size: var(--font-m);
   line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-
-
-.icon-block {
-  padding: 0 15px;
-}
-
-footer.page-footer {
-  margin: 0;
-}
-
-
-
-
- .parallax img 
- {
- 	 background-repeat: no-repeat;
- 	 background-size: cover;
- }
- .parallax-container
- {
- 	color: black;
- }
- @media only screen and (max-width : 600px) {
-  .parallax-container
- {
- 	color: white;
- }
-}
- nav a.button-collapse
- {
- 	color:black;
- }
- .purple.lighten-1 {
-  background-color: #CC0066 !important;
-}
-.teal-text.text-lighten-2 {
-  color: #CC0066 !important;
-}
-.share-buttons{
-	list-style: none;
-}
-
-.share-buttons li{
-	display: inline;
-}
-nav
-{
-	overflow: visible;
-}
-nav li a {
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
+  margin: 0 !important;
 }
