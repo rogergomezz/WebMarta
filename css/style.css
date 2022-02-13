@@ -46,7 +46,19 @@ body {
 }
 
 .img-content {
+  min-height: 500px;
+  align-content: center;
 
+  /* Create the parallax scrolling effect */
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/landscape.jpg);
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .text-heading {
@@ -94,7 +106,21 @@ body {
   color: var(--color-secondary);
 }
 
+.section-parallax-content {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  min-height: 450px;
 
+  /* Create the parallax scrolling effect */
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/leon.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .parallax-content {
   display: flex;
   width: 100%;
